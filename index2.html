@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adeniyi Martins — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="nav-logo">AM.</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="site">
+
+        <!-- HERO -->
+        <div class="hero">
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFNpOVsUFT-0g/profile-displayphoto-scale_200_200/B4EZ20vx0IHcAY-/0/1776853920278?e=2147483647&v=beta&t=OW7mKgy_zszp71xqgr5QCtLD7cv2jvzcrtsPskz2d_I" alt="Adeniyi Martins profile picture">
+            <div class="hero-text">
+                <h1>Adeniyi Martins</h1>
+                <p>Computer Science · <a href="https://computing.ui.edu.ng/">Faculty of Computing</a>, <a href="https://ui.edu.ng/">University of Ibadan</a></p>
+                <div class="badges">
+                    <span class="badge">ACM Member</span>
+                    <span class="badge">ISIC Member</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-text">
+                I'm a Computer Science student at the University of Ibadan with a passion for technology,
+                design, and building things that matter.Also, skilled in frame interpolation,video/photo upscaling and video editing with the use of  Aftereffects. I'm an active member of the ACM(Association for Computing Machinery) organization,
+                continuously growing my skills in software development and design.
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Seed of Life Nursery and Primary Schools</li>
+                <li>Oritamefa Baptist Model School</li>
+                <li>University of Ibadan — Computer Science</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="tag">HTML · CSS</div>
+                    <h4>Personal Portfolio</h4>
+                    <p>A responsive personal CV website built from scratch and hosted on GitHub Pages.</p>
+                </div>
+                <div class="project-card">
+                    <div class="tag">Python</div>
+                    <h4>Pomodoro App</h4>
+                    <p>A productivity timer app built with Python.</p>
+                </div>
+                <div class="project-card">
+                    <div class="tag">Python · API</div>
+                    <h4>ISS Tracker</h4>
+                    <p>Sends an email whenever the International Space Station passes nearby.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name">Data Analysis</div>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width:40%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Windows Dev</div>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width:20%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Graphics Design</div>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width:20%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">Motion Graphics</div>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name">UI/UX</div>
+                    <div class="skill-bar"><div class="skill-bar-fill" style="width:20%"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p>LinkedIn: <a href="https://ng.linkedin.com/in/osemilore-adeniyi-64800a400">Martins Adeniyi</a></p>
+                <p>Phone: +234-9076145412</p>
+                <p>Email: <a href="mailto:adeniyim@acm.org">adeniyim@acm.org</a></p>
+            </div>
+
+            <form action="https://formspree.io/f/mkokevjd" method="POST" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="username">Your Name</label>
+                        <input type="text" id="username" name="username" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@email.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="submit-btn">
+            </form>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <span>© 2026 Adeniyi Martins</span>
+            <a href="mailto:adeniyim@acm.org">adeniyim@acm.org</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
