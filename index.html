@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style (1).css">
 </head>
 
 <body>
@@ -22,6 +22,7 @@
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌙</button>
         </div>
     </nav>
 
@@ -31,11 +32,11 @@
         <div class="hero">
             <img src="https://media.licdn.com/dms/image/v2/D4E03AQFNpOVsUFT-0g/profile-displayphoto-scale_200_200/B4EZ20vx0IHcAY-/0/1776853920278?e=2147483647&v=beta&t=OW7mKgy_zszp71xqgr5QCtLD7cv2jvzcrtsPskz2d_I" alt="Adeniyi Martins profile picture">
             <div class="hero-text">
-                <h1>Adeniyi Martins</h1>
+                <h1>Adeniyi <em>Martins</em></h1>
                 <p>Computer Science · <a href="https://computing.ui.edu.ng/">Faculty of Computing</a>, <a href="https://ui.edu.ng/">University of Ibadan</a></p>
                 <div class="badges">
                     <span class="badge">ACM Member</span>
-                    <span class="badge">ISIC Member</span>
+                    <span class="badge">ISIC Cardholder</span>
                 </div>
             </div>
         </div>
@@ -45,8 +46,9 @@
             <h2>About Me</h2>
             <div class="about-text">
                 I'm a Computer Science student at the University of Ibadan with a passion for technology,
-                design, and building things that matter.Also, skilled in frame interpolation,video/photo upscaling and video editing with the use of  Aftereffects. I'm an active member of the ACM(Association for Computing Machinery) organization,
-                continuously growing my skills in software development and design.
+                design, and building things that matter. Also skilled in frame interpolation, video/photo upscaling
+                and video editing with the use of After Effects. I'm an active member of the
+                ACM (Association for Computing Machinery), continuously growing my skills in software development and design.
             </div>
         </section>
 
@@ -79,7 +81,6 @@
                     <h4>ISS Tracker</h4>
                     <p>Sends an email whenever the International Space Station passes nearby.</p>
                 </div>
-
             </div>
         </section>
 
@@ -150,5 +151,20 @@
 
     </div>
 
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const btn = document.querySelector('.theme-toggle');
+            if (html.getAttribute('data-theme') === 'dark') {
+                html.setAttribute('data-theme', 'light');
+                btn.textContent = '🌙';
+            } else {
+                html.setAttribute('data-theme', 'dark');
+                btn.textContent = '☀️';
+            }
+        }
+    </script>
+
 </body>
 </html>
+
