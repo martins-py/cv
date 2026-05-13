@@ -1,170 +1,322 @@
-<!doctype html>
-<html lang="en" data-theme="dark">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Adeniyi Martins — Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Frame2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- NAV -->
-    <nav>
-        <div class="nav-logo">AM.</div>
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌙</button>
-        </div>
-    </nav>
-
-    <div class="site">
-
-        <!-- HERO -->
-        <div class="hero">
-            <img src="https://media.licdn.com/dms/image/v2/D4E03AQGiTglZ0Ymt6g/profile-displayphoto-scale_200_200/B4EZ4WKb2IGYAc-/0/1778488296434?e=2147483647&v=beta&t=R-8zim5E82cAjTt-VaFxNgRSgque5BfDlUretTR85aw" alt="Adeniyi Martins profile picture">
-            <div class="hero-text">
-                <h1>Adeniyi <em>Martins</em></h1>
-                <p>Computer Science · <a href="https://computing.ui.edu.ng/">Faculty of Computing</a>, <a href="https://ui.edu.ng/">University of Ibadan</a></p>
-                <div class="badges">
-                    <span class="badge">ACM Member</span>
-                    <span class="badge">ISIC Cardholder</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- ABOUT -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-text">
-                I'm a Computer Science student at the University of Ibadan with a passion for technology,
-                design, and building things that matter. Also skilled in frame interpolation, video/photo upscaling
-                and video editing with the use of After Effects. I'm an active member of the
-                ACM (Association for Computing Machinery), continuously growing my skills in software development and design.
-            </div>
-        </section>
-
-        <!-- EDUCATION -->
-        <section id="education">
-            <h2>Education</h2>
-            <ul>
-                <li>Seed of Life Nursery and Primary Schools</li>
-                <li>Oritamefa Baptist Model School</li>
-                <li>University of Ibadan — Computer Science</li>
-            </ul>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="tag">HTML · CSS</div>
-                    <h4>Personal Portfolio</h4>
-                    <p>A responsive personal CV website built from scratch and hosted on GitHub Pages.</p>
-                </div>
-                <div class="project-card">
-                    <div class="tag">Python</div>
-                    <h4>Pomodoro App</h4>
-                    <p>A productivity timer app built with Python.</p>
-                </div>
-                <div class="project-card">
-                    <div class="tag">Python · API</div>
-                    <h4>ISS Tracker</h4>
-                    <p>Sends an email whenever the International Space Station passes nearby.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-name">Data Analysis</div>
-                    <div class="skill-bar"><div class="skill-bar-fill" style="width:40%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-name">Python</div>
-                    <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-name">Windows Dev</div>
-                    <div class="skill-bar"><div class="skill-bar-fill" style="width:20%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-name">Graphics Design</div>
-                    <div class="skill-bar"><div class="skill-bar-fill" style="width:20%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-name">Motion Graphics</div>
-                    <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-name">UI/UX</div>
-                    <div class="skill-bar"><div class="skill-bar-fill" style="width:20%"></div></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p>LinkedIn: <a href="https://ng.linkedin.com/in/osemilore-adeniyi-64800a400">Martins Adeniyi</a></p>
-                <p>Phone: +234-9076145412</p>
-                <p>Email: <a href="mailto:adeniyim@acm.org">adeniyim@acm.org</a></p>
-            </div>
-
-            <form action="https://formspree.io/f/mkokevjd" method="POST" class="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="username">Your Name</label>
-                        <input type="text" id="username" name="username" placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="john@email.com">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="6" placeholder="Write your message here..."></textarea>
-                </div>
-                <input type="submit" value="Send Message" class="submit-btn">
-            </form>
-        </section>
-
-        <!-- FOOTER -->
-        <footer>
-            <span>© 2026 Adeniyi Martins</span>
-            <a href="mailto:adeniyim@acm.org">adeniyim@acm.org</a>
-        </footer>
-
+  <div class="contain">
+  <div class="column">
+   <div class="view">
+    <div class="column2">
+     <div class="box">
+     </div>
+     <div class="box2">
+     </div>
     </div>
-
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const btn = document.querySelector('.theme-toggle');
-            if (html.getAttribute('data-theme') === 'dark') {
-                html.setAttribute('data-theme', 'light');
-                btn.textContent = '🌙';
-            } else {
-                html.setAttribute('data-theme', 'dark');
-                btn.textContent = '☀️';
-            }
-        }
-    </script>
-
-</body>
-</html>
-
+   </div>
+   <div class="view2">
+    <img
+     src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/7qm2b9rw_expires_30_days.png"
+     class="image"
+    />
+   </div>
+   <div class="column3">
+    <div class="column4">
+     <div class="column5">
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/pwq1he93_expires_30_days.png"
+       class="image2"
+      />
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/bn31sjcm_expires_30_days.png"
+       class="image3"
+      />
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/tg5u5vs5_expires_30_days.png"
+       class="image4"
+      />
+     </div>
+     <div class="column6">
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/xveqb26h_expires_30_days.png"
+       class="image5"
+      />
+      <div class="row-view">
+       <div class="column7">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/n6102jns_expires_30_days.png"
+         class="image6"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/wkevtffx_expires_30_days.png"
+         class="image7"
+        />
+       </div>
+       <div class="column7">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/883yf887_expires_30_days.png"
+         class="image8"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/7typkmt1_expires_30_days.png"
+         class="image9"
+        />
+       </div>
+       <div class="column7">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/peyd1q46_expires_30_days.png"
+         class="image10"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/lpqvevvd_expires_30_days.png"
+         class="image9"
+        />
+       </div>
+       <div class="column7">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/1zx7m3ro_expires_30_days.png"
+         class="image6"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/utdzs39n_expires_30_days.png"
+         class="image9"
+        />
+       </div>
+      </div>
+     </div>
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/8gvdc4gu_expires_30_days.png"
+      class="image11"
+     />
+    </div>
+    <div class="column8">
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/kqb1nh4h_expires_30_days.png"
+      class="image12"
+     />
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/5u2urxqc_expires_30_days.png"
+      class="image13"
+     />
+     <div class="column9">
+      <div class="row-view2">
+       <div class="column10">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/doq42jot_expires_30_days.png"
+         class="image14"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/yt2eiled_expires_30_days.png"
+         class="image15"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/6he2lnkr_expires_30_days.png"
+         class="image16"
+        />
+       </div>
+       <div class="column11">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/j3sa4smc_expires_30_days.png"
+         class="image17"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/ituthe6n_expires_30_days.png"
+         class="image18"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/f7szqlsw_expires_30_days.png"
+         class="image19"
+        />
+       </div>
+       <div class="column11">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/15491sy3_expires_30_days.png"
+         class="image17"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/5se96b07_expires_30_days.png"
+         class="image18"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/y3mfjmg9_expires_30_days.png"
+         class="image20"
+        />
+       </div>
+      </div>
+      <div class="row-view">
+       <div class="column11">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/z8fujtut_expires_30_days.png"
+         class="image17"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/07y9wvui_expires_30_days.png"
+         class="image18"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/bp1xpg1m_expires_30_days.png"
+         class="image19"
+        />
+       </div>
+       <div class="column11">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/t2jv0pu0_expires_30_days.png"
+         class="image17"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/r9nwpf9z_expires_30_days.png"
+         class="image21"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/dka3rppf_expires_30_days.png"
+         class="image19"
+        />
+       </div>
+       <div class="column12">
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/0gy8pux0_expires_30_days.png"
+         class="image14"
+        />
+        <img
+         src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/56v4zr9u_expires_30_days.png"
+         class="image22"
+        />
+        <div class="box3">
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="row-view3">
+    <div class="column13">
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/grpajr2c_expires_30_days.png"
+      class="image23"
+     />
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/3jaob7jg_expires_30_days.png"
+      class="image24"
+     />
+     <div class="column14">
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/ez3y0xrn_expires_30_days.png"
+       class="image25"
+      />
+      <div class="box4">
+      </div>
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/biymzsw2_expires_30_days.png"
+       class="image26"
+      />
+     </div>
+     <div class="column15">
+      <div class="row-view4">
+       <button class="button"
+        onclick="alert('Pressed!')"}>
+        <div class="column16">
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/abs3y6w3_expires_30_days.png"
+          class="image27"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/8f2v4366_expires_30_days.png"
+          class="image28"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/ixkapnaz_expires_30_days.png"
+          class="image29"
+         />
+        </div>
+       </button>
+       <button class="button"
+        onclick="alert('Pressed!')"}>
+        <div class="column17">
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/l6vl1o47_expires_30_days.png"
+          class="image27"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/bfw0pzaa_expires_30_days.png"
+          class="image28"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/v4ni6ikt_expires_30_days.png"
+          class="image29"
+         />
+        </div>
+       </button>
+      </div>
+      <div class="row-view4">
+       <button class="button"
+        onclick="alert('Pressed!')"}>
+        <div class="column16">
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/d460imyz_expires_30_days.png"
+          class="image27"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/31luqz8i_expires_30_days.png"
+          class="image30"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/r10rmxkw_expires_30_days.png"
+          class="image31"
+         />
+        </div>
+       </button>
+       <button class="button"
+        onclick="alert('Pressed!')"}>
+        <div class="column16">
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/r1qk9lx9_expires_30_days.png"
+          class="image27"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/fdzeld7n_expires_30_days.png"
+          class="image30"
+         />
+         <img
+          src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/ehrgc241_expires_30_days.png"
+          class="image29"
+         />
+        </div>
+       </button>
+      </div>
+     </div>
+    </div>
+    <img
+     src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/j6o8g3tt_expires_30_days.png"
+     class="image32"
+    />
+   </div>
+   <div class="column18">
+    <div class="column19">
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/bo536ctm_expires_30_days.png"
+      class="image33"
+     />
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/p8l4ee7b_expires_30_days.png"
+      class="image34"
+     />
+     <img
+      src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/c4tloj4r_expires_30_days.png"
+      class="image35"
+     />
+    </div>
+    <div class="view3">
+     <div class="row-view5">
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/w1jdauuc_expires_30_days.png"
+       class="image33"
+      />
+      <img
+       src="https://storage.googleapis.com/tagjs-prod.appspot.com/v1/r8427koLH7/mra7xy6u_expires_30_days.png"
+       class="image36"
+      />
+     </div>
+    </div>
